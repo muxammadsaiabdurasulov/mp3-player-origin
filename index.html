@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mp3 Player</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Music Player</h1>
+
+    <div class="music-container">
+        <div class="music-info">
+            <h4 id="title">Ukulele</h4>
+            <div class="progress-container">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <audio id="audio" src="sounds/1510748560_zayn_malik_feat_sia_dusk_till_dawn_www_muzonov_net.mp3"></audio>
+    
+        <div class="img-container">
+            <img id="cover" src="images/img-2.jpg" alt="" height="80" width="130">
+        </div>
+
+        <div class="navigation">
+            <button class="action-btn" id="prev">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button class="action-btn action-btn-big" id="play">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="action-btn" id="next">
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="app.js"></script>
+</body>
+</html>
